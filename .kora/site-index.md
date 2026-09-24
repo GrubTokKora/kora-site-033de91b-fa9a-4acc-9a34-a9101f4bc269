@@ -55,6 +55,69 @@ sections:
 also: The page description is mirrored between the meta description tag, the Open Graph description tag, the Twitter description tag, and the JSON-LD WebPage description.
 also: The page title is mirrored between the title tag, the Open Graph title tag, the Twitter title tag, and the JSON-LD WebPage name.
 
+## blog.html → /blog
+title: Landscaping & Masonry Blog | Earthworks Norwalk, CT
+purpose: Blog index listing the six Earthworks advice articles on hardscape, masonry, planting, drainage, lighting and seasonal care in Norwalk and Fairfield County, CT.
+sections:
+- `#hero` "The Earthworks Blog" — blog introduction: Field Notes, Norwalk, CT
+- `#posts` "Latest from the yard" — article list, newest first, each with image, category, excerpt, date and read time: Bluestone vs. Pavers: What Actually Holds Up in Coastal CT, Why Retaining Walls Fail (It's Almost Never the Stone), 12 Plants That Thrive in Fairfield County Front Yards, Standing Water After Every Storm? Start Here, Landscape Lighting Mistakes That Make a Yard Look Cheap, Spring Checklist for Your Patio, Walls and Beds
+- `#contact` "Questions About Your Own Yard?" — call to action for estimates
+also: Blog JSON-LD lists all six posts; keep it in step with the `#posts` list.
+
+## blog-bluestone-vs-pavers-coastal-ct.html → /blog-bluestone-vs-pavers-coastal-ct
+title: Bluestone vs. Pavers in Coastal CT | Earthworks Blog
+purpose: Hardscape blog article "Bluestone vs. Pavers: What Actually Holds Up in Coastal CT", written for homeowners in Norwalk and Fairfield County, CT.
+sections:
+- `#hero` — breadcrumb (Home / Blog / Hardscape), category eyebrow, headline, standfirst, byline, date, read time and featured image
+- `#article` — article body: What you're really choosing between, Freeze-thaw: the real test in Connecticut, Salt air and de-icing salt, Shade, moss and slippery surfaces, Heat underfoot, Where each one disappoints, The base matters more than the surface, How we usually recommend, Talk it through on site; sidebar: free site walk CTA, More from the blog (the other five articles)
+- `#contact` "Questions About Your Own Yard?" — call to action for estimates
+also: BlogPosting JSON-LD mirrors the title, meta description, featured image and date.
+
+## blog-why-retaining-walls-fail.html → /blog-why-retaining-walls-fail
+title: Why Retaining Walls Fail in CT | Earthworks Blog
+purpose: Masonry blog article "Why Retaining Walls Fail (It's Almost Never the Stone)", written for homeowners in Norwalk and Fairfield County, CT.
+sections:
+- `#hero` — breadcrumb (Home / Blog / Masonry), category eyebrow, headline, standfirst, byline, date, read time and featured image
+- `#article` — article body: The force you can't see, What's behind a wall that lasts, The warning signs, A note on height and permits, Stone vs. block: does it matter?, If your wall is moving; sidebar: free site walk CTA, More from the blog (the other five articles)
+- `#contact` "Questions About Your Own Yard?" — call to action for estimates
+also: BlogPosting JSON-LD mirrors the title, meta description, featured image and date.
+
+## blog-plants-for-fairfield-county-front-yards.html → /blog-plants-for-fairfield-county-front-yards
+title: 12 Plants for Fairfield County Front Yards | Earthworks
+purpose: Planting blog article "12 Plants That Thrive in Fairfield County Front Yards", written for homeowners in Norwalk and Fairfield County, CT.
+sections:
+- `#hero` — breadcrumb (Home / Blog / Planting), category eyebrow, headline, standfirst, byline, date, read time and featured image
+- `#article` — article body: Evergreen and winter backbone, Summer bloom that survives the deer, Grasses for winter structure, Shade and late-winter bloom, Two plants to leave off the list, Setting up clay beds for success, A front yard that works all year; sidebar: free site walk CTA, More from the blog (the other five articles)
+- `#contact` "Questions About Your Own Yard?" — call to action for estimates
+also: BlogPosting JSON-LD mirrors the title, meta description, featured image and date.
+
+## blog-standing-water-after-storms.html → /blog-standing-water-after-storms
+title: Standing Water in Your Yard? Start Here | Earthworks CT
+purpose: Drainage blog article "Standing Water After Every Storm? Start Here", written for homeowners in Norwalk and Fairfield County, CT.
+sections:
+- `#hero` — breadcrumb (Home / Blog / Drainage), category eyebrow, headline, standfirst, byline, date, read time and featured image
+- `#article` — article body: Why the source matters, Step 1: Watch it rain, Step 2: Run the hose test, Step 3: Check the grade with a level, Matching the fix to the problem, A few Norwalk-specific notes, When to call in help; sidebar: free site walk CTA, More from the blog (the other five articles)
+- `#contact` "Questions About Your Own Yard?" — call to action for estimates
+also: BlogPosting JSON-LD mirrors the title, meta description, featured image and date.
+
+## blog-landscape-lighting-mistakes.html → /blog-landscape-lighting-mistakes
+title: Landscape Lighting Mistakes to Avoid | Earthworks CT
+purpose: Lighting blog article "Landscape Lighting Mistakes That Make a Yard Look Cheap", written for homeowners in Norwalk and Fairfield County, CT.
+sections:
+- `#hero` — breadcrumb (Home / Blog / Lighting), category eyebrow, headline, standfirst, byline, date, read time and featured image
+- `#article` — article body: Mistake 1: The runway, Mistake 2: Cool white bulbs, Mistake 3: Lights aimed at nothing, Mistake 4: Glare, Mistake 5: Ignoring the stonework, Mistake 6: Cheap fixtures and quick wiring, Light the stone, not the yard; sidebar: free site walk CTA, More from the blog (the other five articles)
+- `#contact` "Questions About Your Own Yard?" — call to action for estimates
+also: BlogPosting JSON-LD mirrors the title, meta description, featured image and date.
+
+## blog-spring-checklist-patio-walls-beds.html → /blog-spring-checklist-patio-walls-beds
+title: Spring Checklist for Patios, Walls & Beds | Earthworks CT
+purpose: Seasonal blog article "Spring Checklist for Your Patio, Walls and Beds", written for homeowners in Norwalk and Fairfield County, CT.
+sections:
+- `#hero` — breadcrumb (Home / Blog / Seasonal), category eyebrow, headline, standfirst, byline, date, read time and featured image
+- `#article` — article body: Patios and walkways, Retaining walls and seat walls, Steps, Beds and plantings, Gutters, drainage and lighting, Book early; sidebar: free site walk CTA, More from the blog (the other five articles)
+- `#contact` "Questions About Your Own Yard?" — call to action for estimates
+also: BlogPosting JSON-LD mirrors the title, meta description, featured image and date.
+
 ## support files
 Files that are not pages. A line marked [content] holds words or data a visitor reads, so a
 change to the site's content can land there; the rest only make the site work or look right.
@@ -63,5 +126,6 @@ change to the site's content can land there; the rest only make the site work or
 - `sitemap.xml` — 160 bytes — too small to hold content
 
 ## shared (every page)
+Navigation order is Services, About, Gallery, Blog, then the Get a Free Estimate button (mobile menu: Home, Services, About, Gallery, Blog; footer Pages: Home, Services, About, Gallery, Blog, Free estimate).
 The header, navigation, mobile menu and footer are propagated from index.html to every other page by
 `shell_propagation`. A change to any of them is made on index.html alone and copied automatically.

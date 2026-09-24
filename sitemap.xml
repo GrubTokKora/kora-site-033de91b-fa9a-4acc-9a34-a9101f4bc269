@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>/</loc><priority>1.0</priority></url>
+  <url><loc>https://earthworksct.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://earthworksct.com/services</loc><priority>0.8</priority></url>
+  <url><loc>https://earthworksct.com/about</loc><priority>0.8</priority></url>
+  <url><loc>https://earthworksct.com/gallery</loc><priority>0.8</priority></url>
+  <url><loc>https://earthworksct.com/blog</loc><priority>0.7</priority></url>
+  <url><loc>https://earthworksct.com/blog-bluestone-vs-pavers-coastal-ct</loc><priority>0.6</priority></url>
+  <url><loc>https://earthworksct.com/blog-why-retaining-walls-fail</loc><priority>0.6</priority></url>
+  <url><loc>https://earthworksct.com/blog-plants-for-fairfield-county-front-yards</loc><priority>0.6</priority></url>
+  <url><loc>https://earthworksct.com/blog-standing-water-after-storms</loc><priority>0.6</priority></url>
+  <url><loc>https://earthworksct.com/blog-landscape-lighting-mistakes</loc><priority>0.6</priority></url>
+  <url><loc>https://earthworksct.com/blog-spring-checklist-patio-walls-beds</loc><priority>0.6</priority></url>
+  <url><loc>https://earthworksct.com/contact</loc><priority>0.8</priority></url>
 </urlset>

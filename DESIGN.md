@@ -31,7 +31,7 @@ palette:
 
     Primary red (#c50613) is reserved for action. It appears on "Get a Free Estimate" buttons with
     white text (about 6:1), on the phone number as a link on the light ground (about 5.5:1), on the
-    offer band's top rule and on the emergency-calls line. Red is never used as text on green, where
+    offer band's top rule, on the emergency-calls line and on the blog sidebar's phone link. Red is never used as text on green, where
     it fails.
 
     Accent sage (#acbdad) is graphic only and never carries text anywhere, because it measures about
@@ -82,9 +82,58 @@ pages:
     takes: [contact, faq, hours_location]
     sources: [https://earthworksct.com/contact]
 
-redirects:
-  - from: /blog
-    to: none
+  - slug: blog
+    title: "Landscaping & Masonry Blog | Earthworks Norwalk, CT"
+    description: "Practical advice from Norwalk masons and landscapers: patio materials, retaining wall drainage, Fairfield County plantings, yard drainage, lighting and spring prep."
+    h1: "The Earthworks Blog"
+    intent: can these people explain my problem in plain terms before I call
+    takes: [blog]
+    sources: [https://earthworksct.com/blog]
+  - slug: blog-bluestone-vs-pavers-coastal-ct
+    title: "Bluestone vs. Pavers in Coastal CT | Earthworks Blog"
+    description: "Bluestone or concrete pavers for a Norwalk patio? How salt air, freeze-thaw and shade moss change the answer, and where each material disappoints."
+    h1: "Bluestone vs. Pavers: What Actually Holds Up in Coastal CT"
+    intent: a hardscape question answered in full, with a site walk as the next step
+    takes: [blog_post]
+    sources: [https://earthworksct.com/blog]
+  - slug: blog-why-retaining-walls-fail
+    title: "Why Retaining Walls Fail in CT | Earthworks Blog"
+    description: "Most failed retaining walls had no drainage stone, no filter fabric and no weep outlet. What's behind the face of a Connecticut wall that lasts."
+    h1: "Why Retaining Walls Fail (It's Almost Never the Stone)"
+    intent: a masonry question answered in full, with a site walk as the next step
+    takes: [blog_post]
+    sources: [https://earthworksct.com/blog]
+  - slug: blog-plants-for-fairfield-county-front-yards
+    title: "12 Plants for Fairfield County Front Yards | Earthworks"
+    description: "Deer-resistant, salt-tolerant, clay-forgiving plants for Fairfield County, CT front yards, chosen so beds still look intentional in February."
+    h1: "12 Plants That Thrive in Fairfield County Front Yards"
+    intent: a planting question answered in full, with a site walk as the next step
+    takes: [blog_post]
+    sources: [https://earthworksct.com/blog]
+  - slug: blog-standing-water-after-storms
+    title: "Standing Water in Your Yard? Start Here | Earthworks CT"
+    description: "Before you install a drain, find out where the water comes from. A simple three-step yard drainage diagnosis with a hose and a level, for CT homeowners."
+    h1: "Standing Water After Every Storm? Start Here"
+    intent: a drainage question answered in full, with a site walk as the next step
+    takes: [blog_post]
+    sources: [https://earthworksct.com/blog]
+  - slug: blog-landscape-lighting-mistakes
+    title: "Landscape Lighting Mistakes to Avoid | Earthworks CT"
+    description: "Even spacing, cool white bulbs and lights aimed at nothing. The landscape lighting mistakes we see most, and what to do so your stonework carries the night."
+    h1: "Landscape Lighting Mistakes That Make a Yard Look Cheap"
+    intent: a lighting question answered in full, with a site walk as the next step
+    takes: [blog_post]
+    sources: [https://earthworksct.com/blog]
+  - slug: blog-spring-checklist-patio-walls-beds
+    title: "Spring Checklist for Patios, Walls & Beds | Earthworks CT"
+    description: "Ten minutes of inspection in April prevents a rebuild in October. A spring checklist for patios, retaining walls, steps and beds after a Connecticut winter."
+    h1: "Spring Checklist for Your Patio, Walls and Beds"
+    intent: a seasonal question answered in full, with a site walk as the next step
+    takes: [blog_post]
+    sources: [https://earthworksct.com/blog]
+
+# /blog is served by blog.html. The old site had no individual post URLs, so nothing needs redirecting.
+redirects: []
 
 composition: >
   A homeowner's fear with a contractor is the number and the mess, not the portfolio. So this
@@ -266,6 +315,52 @@ sections:
       The details column holds the phone, address, hours, and the Facebook and Yelp links. No business
       email appears anywhere, because none exists.
 
+  - id: blog
+    priority: supporting
+    show: "all 6 articles on blog.html; one article per blog-<slug>.html page"
+    intent: Answer the questions homeowners search before they call (patio material, failing walls, plants, standing water, lighting, spring checks) in the crew's plain voice, and turn each answer into a site walk.
+    spec: >
+      Blog is a first-class page. It sits in the header nav, the mobile nav and the footer "Pages"
+      list, after Gallery and before the "Get a Free Estimate" button. It is marked active with
+      aria-current="page" on blog.html and every article page.
+
+      blog.html has a band-tight hero (eyebrow "Field Notes · Norwalk, CT", display h1 "The Earthworks
+      Blog", and the standfirst "What we've learned building stone and gardens in Connecticut
+      weather."). Below it, the six articles are listed newest first in a .post-list grid: three
+      columns on desktop, two on tablet, one on mobile. Each entry has a 4:3 image, a category eyebrow,
+      the title as an h2 link, the excerpt in muted text, date and read time, and "Read the article →".
+      Entries are separated by hairline top rules, not cards: no shadows and no rounded containers.
+
+      Each article is a flat root file, blog-<slug>.html, served at /blog-<slug>. Posts are not in a
+      /blog/ folder, because every page must load assets/styles.css relatively and no internal href
+      may start with "/". An article page has breadcrumbs (Home / Blog / category), a category eyebrow,
+      the headline as the page's only h1 (.display .post-title, capped at 4rem), the excerpt as the
+      standfirst, and the byline "By the Earthworks crew", date and read time. Then comes a full-bleed
+      featured image (4:3 on mobile, 21:9 on desktop). The body is set in .prose at 68ch, with h2
+      subheads, square sage-marked bullets and numbered lists.
+
+      A sticky sidebar (.post-aside, desktop only; it stacks below the article on mobile) holds a
+      "Free site walk" block with the red tel: link and a "Get a Free Estimate" button, and "More from
+      the blog" linking the other five articles. Every blog page ends with the green contact band
+      "Questions About Your Own Yard?".
+
+      Each article carries BlogPosting JSON-LD (author and publisher are #business, with a
+      BreadcrumbList). blog.html carries Blog JSON-LD listing all six posts. og:type is "article" on
+      posts and "website" on the index. The og:image is the post's featured image.
+
+      Article images are the supplied Kora-hosted WebP files. Three are shared with the gallery
+      (bluestone patio, retaining wall, planting), and the other three were uploaded for the blog
+      (drainage, lighting, spring). The blog hero image is gallery image 7uqth5. Alt text describes
+      what each photo shows.
+
+      The only phone number is 203-685-7355. Posts reuse the site's published facts
+      ($28–$55 per square foot, a proposal within 3 business days, permits and engineering handled
+      for walls over four feet) and state no other prices.
+
+      To add a post, copy an existing blog-<slug>.html. Then add it to the top of the blog.html list
+      and its Blog JSON-LD, to every other post's "More from the blog" list, to llms.txt, to
+      sitemap.xml and to .kora/site-index.md.
+
 avoid:
   - The stat counters from their old site ("529+ Years", "36,504 Projects", "1,711,927 sq ft", "2,467%"). They are impossible and would destroy trust. Do not animate or count up any number.
   - Any years-in-business figure other than "more than 25 years of combined experience" from their own story. The old site's conflicting "21 Years" and "two decades" claims do not get a headline.
@@ -278,7 +373,8 @@ avoid:
   - A hero or band headline that states a belief ("we believe every property deserves…") instead of what they build.
   - Drop shadows, rounded card containers and serif display type.
   - Stock photos of lawns, seedlings in hands, or a smiling crew. Only the supplied image URLs are used.
-  - The Facebook feed embed, the "Featured Film" and "Watch the Work" video sections, and any blog or "Field Notes" link. None of that content exists here.
+  - The Facebook feed embed and the "Featured Film" and "Watch the Work" video sections. None of that content exists here. (The blog is not in this list: it is part of the site. See the blog section.)
+  - Blog posts in a /blog/ subfolder, absolute "/blog/..." links, or a second h1 on an article page.
   - Before/after sliders. The before and after images are not available.
   - The Maureen D. and Alec Lasky quotes from the old site. Only the two reviews in SITE CONTENT appear.
   - Sage (#acbdad) as a text colour, or red (#c50613) text on the green band.
