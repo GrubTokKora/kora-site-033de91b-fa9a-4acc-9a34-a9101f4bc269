@@ -41,6 +41,7 @@ sections:
 - `#hero` — introductory text and service area list: Norwalk, Rowayton, Westport, Darien
 - `#gallery` "Recent projects, photographed on site" — filterable masonry grid of 33 project photographs; filter buttons: All, Masonry, Landscaping, Outdoor Living; click any photo to open the lightbox viewer (`#lightbox`) with prev/next, keyboard and swipe
 - `#transformations` "Before & After" — four draggable before/after slider cards with town, title and one-line description: Backyard Lawn Renovation (Norwalk), Front Entry Walkway (Rowayton), Failing Timber Wall Rebuild (Westport), Backyard Patio Build (Darien)
+- `#on-site` "Watch the Work" — two video clips with poster thumbnails and click-to-play: Setting Stone by Hand (Masonry), A Finished Property (Landscaping)
 - `#contact` — call to action for estimates
 also: The page title and meta description appear identically in the HTML head and in the JSON-LD schema block.
 

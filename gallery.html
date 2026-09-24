@@ -386,6 +386,52 @@
   .ba__range::-moz-range-thumb { width: 3rem; height: 100%; border: 0; }
   .ba:has(.ba__range:focus-visible) { outline: 3px solid var(--color-ink); outline-offset: 3px; }
   .ba:has(.ba__range:focus-visible) .ba__handle { scale: 1.1; }
+  /* On Site video clips */
+  .clip__frame {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--color-secondary);
+  }
+  .clip__video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .clip__play {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: rgb(16 37 26 / 0.3);
+    color: var(--color-ground);
+    cursor: pointer;
+    transition: background-color 0.3s var(--ease-site), opacity 0.3s var(--ease-site);
+  }
+  .clip__play:hover { background: rgb(16 37 26 / 0.15); }
+  .clip__play:focus-visible { outline: 3px solid var(--color-ground); outline-offset: -6px; }
+  .clip__play-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    padding-left: 3px;
+    background: var(--color-secondary);
+    border: 2px solid var(--color-ground);
+    box-shadow: 0 0 0 1px rgb(16 37 26 / 0.25);
+    transition: scale 0.25s var(--ease-site);
+  }
+  .clip__play:hover .clip__play-icon { scale: 1.08; }
+  .clip__frame.is-playing .clip__play {
+    opacity: 0;
+    pointer-events: none;
+  }
 </style>
 </head>
 <body data-page="gallery">
@@ -893,6 +939,100 @@
         range.addEventListener('input', update);
         update();
       })(sliders[i]);
+    }
+  })();
+</script>
+<!-- /kora:section -->
+
+<!-- kora:section id="on-site" -->
+<section id="on-site" class="band" aria-labelledby="on-site-heading">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">On Site</p>
+        <h2 id="on-site-heading" class="h2 mt-5 measure-h">Watch the Work</h2>
+        <p class="measure text-muted mt-4">Short clips from recent Norwalk and Westport projects.</p>
+      </div>
+    </div>
+    <div class="ba-grid mt-12">
+      <article class="clip">
+        <div class="clip__frame">
+          <video class="clip__video" id="clip-stone-by-hand" src="https://stream.mux.com/w6DMmlBpMzuFhtygLYpNDtEAVngWEu7AjAMytcZgMqA/high.mp4" poster="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/033de91b-fa9a-4acc-9a34-a9101f4bc269/0b8e8303-87c0-4895-ad63-61c214049730/1790191079_rd92r8.webp" width="1920" height="1080" preload="none" muted loop playsinline aria-label="Setting Stone by Hand: short silent clip"></video>
+          <button class="clip__play" type="button" aria-controls="clip-stone-by-hand" aria-label="Play video: Setting Stone by Hand">
+            <span class="clip__play-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l12.5-7.5z"/></svg>
+            </span>
+          </button>
+        </div>
+        <p class="eyebrow mt-6">Masonry</p>
+        <h3 class="h3 project__title">Setting Stone by Hand</h3>
+        <p class="mt-3 text-muted">Every course checked for level, every joint packed. This is a wall being built to sit still for forty winters.</p>
+      </article>
+      <article class="clip">
+        <div class="clip__frame">
+          <video class="clip__video" id="clip-finished-property" src="https://stream.mux.com/NWoY00NLg01emdJ6dX3vyYsVUBbX9j00volnKvl71hygF00/high.mp4" poster="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/033de91b-fa9a-4acc-9a34-a9101f4bc269/0b8e8303-87c0-4895-ad63-61c214049730/1790191077_8mc96v.webp" width="1920" height="1080" preload="none" muted loop playsinline aria-label="A Finished Property: short silent clip"></video>
+          <button class="clip__play" type="button" aria-controls="clip-finished-property" aria-label="Play video: A Finished Property">
+            <span class="clip__play-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l12.5-7.5z"/></svg>
+            </span>
+          </button>
+        </div>
+        <p class="eyebrow mt-6">Landscaping</p>
+        <h3 class="h3 project__title">A Finished Property</h3>
+        <p class="mt-3 text-muted">Grades that drain, beds that read as intentional, and a lawn thick enough to walk barefoot on.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "VideoObject",
+      "name": "Setting Stone by Hand",
+      "description": "Every course checked for level, every joint packed. This is a wall being built to sit still for forty winters.",
+      "thumbnailUrl": "https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/033de91b-fa9a-4acc-9a34-a9101f4bc269/0b8e8303-87c0-4895-ad63-61c214049730/1790191079_rd92r8.webp",
+      "contentUrl": "https://stream.mux.com/w6DMmlBpMzuFhtygLYpNDtEAVngWEu7AjAMytcZgMqA/high.mp4",
+      "uploadDate": "2026-09-24",
+      "duration": "PT5S",
+      "publisher": {
+        "@id": "https://earthworksct.com/#business"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "name": "A Finished Property",
+      "description": "Grades that drain, beds that read as intentional, and a lawn thick enough to walk barefoot on.",
+      "thumbnailUrl": "https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/033de91b-fa9a-4acc-9a34-a9101f4bc269/0b8e8303-87c0-4895-ad63-61c214049730/1790191077_8mc96v.webp",
+      "contentUrl": "https://stream.mux.com/NWoY00NLg01emdJ6dX3vyYsVUBbX9j00volnKvl71hygF00/high.mp4",
+      "uploadDate": "2026-09-24",
+      "duration": "PT5S",
+      "publisher": {
+        "@id": "https://earthworksct.com/#business"
+      }
+    }
+  ]
+}
+</script>
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.clip__play');
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener('click', function () {
+        var video = document.getElementById(this.getAttribute('aria-controls'));
+        var frame = this.closest('.clip__frame');
+        // Only one clip plays at a time
+        var all = document.querySelectorAll('.clip__video');
+        for (var j = 0; j < all.length; j++) { if (all[j] !== video) all[j].pause(); }
+        frame.classList.add('is-playing');
+        video.controls = true;
+        var played = video.play();
+        if (played && played.catch) {
+          played.catch(function () { frame.classList.remove('is-playing'); video.controls = false; });
+        }
+        video.focus();
+      });
     }
   })();
 </script>

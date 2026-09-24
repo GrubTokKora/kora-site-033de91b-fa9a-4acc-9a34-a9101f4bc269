@@ -278,6 +278,26 @@ sections:
       The eight before/after photos come from the Before & After section of the old
       earthworksct.com/gallery. They were uploaded to Kora as WebP, and local copies and a manifest
       are in docs/transformations. The CollectionPage JSON-LD image list includes them.
+
+      After Transformations comes the On Site band (#on-site) on the ground colour. It has the
+      eyebrow "On Site", the h2 "Watch the Work" and the line "Short clips from recent Norwalk and
+      Westport projects." Below it are two video cards in the same two-column grid as the sliders:
+      - Masonry: "Setting Stone by Hand" ("Every course checked for level, every joint packed. This
+        is a wall being built to sit still for forty winters.")
+      - Landscaping: "A Finished Property" ("Grades that drain, beds that read as intentional, and a
+        lawn thick enough to walk barefoot on.")
+
+      Each clip sits in a 16:9 frame. Its poster is an existing Kora image: rd92r8 (stone setting)
+      for the masonry clip and 8mc96v (the sunlit lawn) for the landscaping clip. Over the poster is a
+      full-frame play button: a square forest-green icon with a ground border and a light ink wash.
+      It is not red, to match the slider handles. The <video> tags use preload="none", so nothing
+      downloads until the visitor presses Play. They are muted, looped and playsinline.
+
+      Clicking Play hides the overlay, turns on native controls and starts the clip. It also pauses
+      the other clip, so only one plays at a time. If playback fails, the overlay comes back. The
+      videos are the old site's two clips (5 seconds each, silent), uploaded to Kora, which serves
+      them from stream.mux.com. Local copies are in docs/videos. The page carries VideoObject
+      JSON-LD for both.
   - id: process
     priority: supporting
     show: all
@@ -421,7 +441,7 @@ avoid:
   - A hero or band headline that states a belief ("we believe every property deserves…") instead of what they build.
   - Drop shadows, rounded card containers and serif display type.
   - Stock photos of lawns, seedlings in hands, or a smiling crew. Only the supplied image URLs are used.
-  - The Facebook feed embed and the "Featured Film" and "Watch the Work" video sections. None of that content exists here. (The blog is not in this list: it is part of the site. See the blog section.)
+  - The Facebook feed embed and the "Featured Film" video section. None of that content exists here. (The blog and the "Watch the Work" clips are not in this list: both are part of the site. See the blog section and the On Site band on gallery.html.)
   - Blog posts in a /blog/ subfolder, absolute "/blog/..." links, or a second h1 on an article page.
   - Before/after sliders anywhere other than the gallery page's Transformations band, and round or red slider handles. The four sliders live only on gallery.html.
   - The Maureen D. and Alec Lasky quotes from the old site. Only the two reviews in SITE CONTENT appear.
