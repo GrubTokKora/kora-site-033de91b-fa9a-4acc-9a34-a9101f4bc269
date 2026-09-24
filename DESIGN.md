@@ -253,14 +253,31 @@ sections:
       neighbouring photos are preloaded. The viewer uses the same square, hairline-bordered button
       language as the mobile nav. There is no red in it.
 
-      Beneath the grid sit the four project write-ups as text entries with town eyebrows:
+      Beneath the grid sits the Transformations band (#transformations). It is on surface with a
+      4px sage top rule, the eyebrow "Transformations", the h2 "Before & After", and the line "Drag
+      the handle across each project to see the same property before we started and after our
+      crew finished." Four before/after slider cards follow, in two columns from 900px and one
+      column below that:
       - Backyard Lawn Renovation, Norwalk
       - Front Entry Walkway, Rowayton
       - Failing Timber Wall Rebuild, Westport
       - Backyard Patio Build, Darien
 
-      These write-ups have no images and no slider, because the before and after files are not
-      available.
+      Each slider is a 3:2 frame. The after photo is the base layer, and the before photo sits on
+      top, clipped with clip-path from the left to --pos. A 2px ground-coloured divider carries a
+      square forest-green handle with a ground border and ‹ › arrows. Square "Before" (ink) and
+      "After" (forest green) tags sit in the top corners. No red is used, because red stays
+      reserved for action.
+
+      An invisible, full-size <input type="range"> handles drag, click-to-jump, touch
+      (touch-action: pan-y, so vertical page scroll still works) and keyboard (arrows, Home and
+      End). Its aria-valuetext reads, for example, "40 percent before, 60 percent after". The frame
+      shows the ink focus ring when the slider has keyboard focus. The slider starts at 50%.
+      Below each frame come the town eyebrow, the project title as an h3 and one line of copy.
+
+      The eight before/after photos come from the Before & After section of the old
+      earthworksct.com/gallery. They were uploaded to Kora as WebP, and local copies and a manifest
+      are in docs/transformations. The CollectionPage JSON-LD image list includes them.
   - id: process
     priority: supporting
     show: all
@@ -406,7 +423,7 @@ avoid:
   - Stock photos of lawns, seedlings in hands, or a smiling crew. Only the supplied image URLs are used.
   - The Facebook feed embed and the "Featured Film" and "Watch the Work" video sections. None of that content exists here. (The blog is not in this list: it is part of the site. See the blog section.)
   - Blog posts in a /blog/ subfolder, absolute "/blog/..." links, or a second h1 on an article page.
-  - Before/after sliders. The before and after images are not available.
+  - Before/after sliders anywhere other than the gallery page's Transformations band, and round or red slider handles. The four sliders live only on gallery.html.
   - The Maureen D. and Alec Lasky quotes from the old site. Only the two reviews in SITE CONTENT appear.
   - Sage (#acbdad) as a text colour, or red (#c50613) text on the green band.
   - Emoji, "🔥", "limited availability" and exclamation-mark urgency carried over from the Facebook posts.

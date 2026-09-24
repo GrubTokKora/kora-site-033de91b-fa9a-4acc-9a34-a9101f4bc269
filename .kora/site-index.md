@@ -40,7 +40,7 @@ purpose: Showcase recent landscaping and masonry projects built by the company i
 sections:
 - `#hero` — introductory text and service area list: Norwalk, Rowayton, Westport, Darien
 - `#gallery` "Recent projects, photographed on site" — filterable masonry grid of 33 project photographs; filter buttons: All, Masonry, Landscaping, Outdoor Living; click any photo to open the lightbox viewer (`#lightbox`) with prev/next, keyboard and swipe
-- `#projects` "What we built, town by town" — list of recent projects with locations and descriptions: Backyard Lawn Renovation, Front Entry Walkway, Failing Timber Wall Rebuild, Backyard Patio Build
+- `#transformations` "Before & After" — four draggable before/after slider cards with town, title and one-line description: Backyard Lawn Renovation (Norwalk), Front Entry Walkway (Rowayton), Failing Timber Wall Rebuild (Westport), Backyard Patio Build (Darien)
 - `#contact` — call to action for estimates
 also: The page title and meta description appear identically in the HTML head and in the JSON-LD schema block.
 
