@@ -209,6 +209,30 @@ sections:
       Beneath it, in muted text, sit what changes the price (stone, base depth, grading, access) and
       the line "a fixed written price after a site visit — no hourly surprises". A 4px sage rule sits
       at the top edge. No other price is stated or implied.
+  - id: film
+    priority: supporting
+    show: all
+    intent: Let the visitor watch a real Norwalk job come together before they read about process, backing the offerings list with footage rather than claims.
+    spec: >
+      This is a forest-green band (on-green) placed directly after #offerings and before #gallery,
+      matching the old site's order, where "Earthworks in Motion" followed the services. It uses
+      the eyebrow "Featured Film", the h2 "Earthworks in Motion" and the standfirst "Stone, soil and
+      steel — a look at how a Norwalk property comes together from first cut to final sweep."
+
+      The video sits in a 16:9 frame up to 64rem wide, on black with a hairline border. It uses
+      object-fit: contain, because the footage is shot upright. The poster is the bluestone fire-pit
+      patio (Kora image aax9ez), under a light ink wash with a square forest-green play button with a
+      ground border, the same button as on the gallery clips. A bottom gradient bar reads "Norwalk,
+      CT" on the left and "1:27" on the right.
+
+      The video uses preload="none", so nothing downloads until Play is pressed. Clicking Play hides
+      the overlay and bar, turns on native controls and plays with sound. If playback fails, the
+      overlay comes back. The file is the old site's earthworks-motion.mp4 (1:27, with audio),
+      uploaded to Kora and served from stream.mux.com at 480p. A local copy is in docs/videos. The
+      band carries VideoObject JSON-LD. The styles live in src/input.css under "Featured film".
+
+      Known issue: the film's opening title card (about the first 10 seconds) shows the old number
+      (203) 858-1773, which conflicts with the rule that only 203-685-7355 appears.
   - id: gallery
     priority: supporting
     show: "5 of the gallery photos on the homepage, chosen for variety of subject, links to gallery.html (which holds all 33 with filters)"
@@ -441,7 +465,7 @@ avoid:
   - A hero or band headline that states a belief ("we believe every property deserves…") instead of what they build.
   - Drop shadows, rounded card containers and serif display type.
   - Stock photos of lawns, seedlings in hands, or a smiling crew. Only the supplied image URLs are used.
-  - The Facebook feed embed and the "Featured Film" video section. None of that content exists here. (The blog and the "Watch the Work" clips are not in this list: both are part of the site. See the blog section and the On Site band on gallery.html.)
+  - The Facebook feed embed. None of that content exists here. (The blog, the "Watch the Work" clips and the "Featured Film" are not in this list: all three are part of the site. See the blog section, the On Site band on gallery.html and the film section on the homepage.)
   - Blog posts in a /blog/ subfolder, absolute "/blog/..." links, or a second h1 on an article page.
   - Before/after sliders anywhere other than the gallery page's Transformations band, and round or red slider handles. The four sliders live only on gallery.html.
   - The Maureen D. and Alec Lasky quotes from the old site. Only the two reviews in SITE CONTENT appear.

@@ -330,8 +330,69 @@
 </section>
 <!-- /kora:section -->
 
+<!-- kora:section id="film" -->
+<section id="film" class="on-green band" aria-labelledby="film-heading" data-reveal>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Featured Film</p>
+        <h2 id="film-heading" class="h2 mt-5 measure-h">Earthworks in Motion</h2>
+        <p class="measure mt-5 text-ground/85">Stone, soil and steel — a look at how a Norwalk property comes together from first cut to final sweep.</p>
+      </div>
+    </div>
+    <div class="film mt-12">
+      <video class="film__video" id="film-video" src="https://stream.mux.com/HIAY65e01FOABvOl1qK2HvgsyKqK9JySYlqsOUf1uBdY/medium.mp4" poster="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/033de91b-fa9a-4acc-9a34-a9101f4bc269/0b8e8303-87c0-4895-ad63-61c214049730/1790191081_aax9ez.webp" width="1920" height="1080" preload="none" playsinline aria-label="Earthworks in Motion: 1 minute 27 second project film"></video>
+      <button class="film__play" type="button" aria-controls="film-video" aria-label="Play the film: Earthworks in Motion">
+        <span class="film__play-icon" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l12.5-7.5z"/></svg>
+        </span>
+      </button>
+      <div class="film__bar" aria-hidden="true">
+        <span class="film__label">Norwalk, CT</span>
+        <span class="film__length fig">1:27</span>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Earthworks in Motion",
+  "description": "Stone, soil and steel — a look at how a Norwalk property comes together from first cut to final sweep.",
+  "thumbnailUrl": "https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/033de91b-fa9a-4acc-9a34-a9101f4bc269/0b8e8303-87c0-4895-ad63-61c214049730/1790191081_aax9ez.webp",
+  "contentUrl": "https://stream.mux.com/HIAY65e01FOABvOl1qK2HvgsyKqK9JySYlqsOUf1uBdY/medium.mp4",
+  "uploadDate": "2026-09-24",
+  "duration": "PT1M27S",
+  "publisher": {
+    "@id": "https://earthworksct.com/#business"
+  },
+  "contentLocation": {
+    "@type": "Place",
+    "name": "Norwalk, CT"
+  }
+}
+</script>
+<script>
+  (function () {
+    var btn = document.querySelector('.film__play');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var frame = btn.closest('.film');
+      var video = document.getElementById('film-video');
+      frame.classList.add('is-playing');
+      video.controls = true;
+      var played = video.play();
+      if (played && played.catch) {
+        played.catch(function () { frame.classList.remove('is-playing'); video.controls = false; });
+      }
+      video.focus();
+    });
+  })();
+</script>
+<!-- /kora:section -->
 <!-- kora:section id="gallery" -->
-<section id="gallery" class="pb-16 md:pb-24" data-reveal>
+<section id="gallery" class="pt-16 pb-16 md:pt-24 md:pb-24" data-reveal>
   <div class="wrap section-head mb-10">
     <div>
       <p class="eyebrow">The work</p>

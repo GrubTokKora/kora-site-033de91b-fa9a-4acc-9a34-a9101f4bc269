@@ -1255,6 +1255,76 @@
     transition: text-decoration-color 0.2s var(--ease-site);
   }
   .post-aside__list a:hover { text-decoration-color: var(--color-border); }
+
+  /* ---------- Featured film (homepage) ---------- */
+  .film {
+    position: relative;
+    max-width: 64rem;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #000;
+    border: 1px solid var(--hair);
+  }
+  .film__video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .film__play {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: rgb(16 37 26 / 0.35);
+    color: var(--color-ground);
+    cursor: pointer;
+    transition: background-color 0.3s var(--ease-site), opacity 0.3s var(--ease-site);
+  }
+  .film__play:hover { background: rgb(16 37 26 / 0.2); }
+  .film__play:focus-visible { outline: 3px solid var(--color-ground); outline-offset: -6px; }
+  .film__play-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    padding-left: 4px;
+    background: var(--color-secondary);
+    border: 2px solid var(--color-ground);
+    box-shadow: 0 0 0 1px rgb(16 37 26 / 0.25);
+    transition: scale 0.25s var(--ease-site);
+  }
+  .film__play:hover .film__play-icon { scale: 1.08; }
+  .film__bar {
+    position: absolute;
+    inset: auto 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2.5rem 1.25rem 1rem;
+    background: linear-gradient(to top, rgb(16 37 26 / 0.9), rgb(16 37 26 / 0));
+    pointer-events: none;
+    transition: opacity 0.3s var(--ease-site);
+  }
+  .film__label {
+    font-weight: 700;
+    font-size: var(--text-eyebrow);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-ground);
+  }
+  .film__length { font-size: var(--text-small); color: var(--color-ground); }
+  .film.is-playing .film__play,
+  .film.is-playing .film__bar {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 

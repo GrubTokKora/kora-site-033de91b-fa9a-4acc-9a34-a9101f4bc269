@@ -9,6 +9,7 @@ sections:
 - `#hero` — Hero introduction and call to action: Norwalk, Fairfield County
 - `#pricing` — Pricing information for stone patios
 - `#offerings` "Services" — List of core landscaping and masonry services: Patios & Walkways, Retaining & Sitting Walls, Outdoor Living, Planting & Garden Design, Drainage & Grading, Lawn & Maintenance, Landscape Lighting, Snow & Ice Management
+- `#film` "Earthworks in Motion" — Featured Film: click-to-play project video with poster thumbnail, Norwalk, CT
 - `#gallery` "Recent projects, photographed on site" — Photo gallery of completed landscaping and masonry projects
 - `#process` "What happens after you call" — Step-by-step description of the project workflow: Site Walk, Design & Price, Build, Walkthrough
 - `#story` — Company background and customer service commitments
