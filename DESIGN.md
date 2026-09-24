@@ -245,6 +245,13 @@ sections:
       Captions are written only from what each photo visibly shows, in small muted text. A "See our
       work →" link goes to gallery.html.
 
+      Each strip photo is wrapped in a .lightbox-open button (zoom-in cursor) and carries data-cat
+      and a descriptive alt (the same wording as on gallery.html). It opens the same lightbox as the
+      gallery page: counter, category, caption, prev/next, arrow keys, swipe, Esc or click outside
+      to close, and focus returned to the photo. On the homepage, prev/next steps through the five
+      strip photos. The lightbox styles are shared in src/input.css ("Lightbox"), and each page has
+      its own small script.
+
       On gallery.html, 33 project photographs appear in a masonry arrangement (one column on mobile,
       two on tablet, three on desktop), with a 2px gap and each photo at its natural aspect ratio.
       The set is the 31 gallery photos from the old earthworksct.com/gallery (not its Before & After
