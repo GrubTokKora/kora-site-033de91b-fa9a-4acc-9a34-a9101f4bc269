@@ -19,6 +19,19 @@ sections:
 - `#hours_location` "Out at seven, and on call for storms" — Operating hours, emergency availability, and yard address
 - `#contact` "Ready to Build Something That Lasts?" — Contact block and estimate call to action
 
+## blog.html → /blog
+title: Landscaping & Masonry Blog | Earthworks Norwalk, CT
+purpose: Field notes and advice on hardscapes, planting, drainage, lighting, and seasonal maintenance for Norwalk and Fairfield County properties.
+sections:
+- `#hero` "Landscaping and Masonry Tips from Our Norwalk Crew" — Blog overview and introduction
+- `#intro` "Coastal Connecticut is hard on outdoor construction" — Topic overview and quick navigation links
+- `#notes` "Six field notes from Fairfield County yards" — Six educational posts: Bluestone vs. Pavers, Retaining Walls, Front Yard Plants, Standing Water, Landscape Lighting, Spring Checklist
+- `#gallery` "What these notes look like on site" — Image showcase of completed Fairfield County work
+- `#seasons` "When to build, when to plant, when to plan" — Seasonal timing advice for masonry and planting
+- `#quick_answers` "What homeowners ask us while planning" — FAQ section for project planning
+- `#offers` "Put the checklist to work" — Seasonal offers for new clients
+- `#contact` "Questions About Your Own Yard?" — Contact and estimate call to action
+
 ## about.html → /about
 title: About Earthworks | Norwalk CT Landscapers & Masons
 purpose: Introduce the family-owned history, brothers, experience, and working principles of Earthworks Landscaping and Masonry LLC.
