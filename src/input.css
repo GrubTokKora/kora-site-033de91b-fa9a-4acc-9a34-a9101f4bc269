@@ -1366,9 +1366,21 @@
   .lightbox-open:focus-visible { outline: 3px solid var(--color-ink); outline-offset: -3px; }
 
   /* ---------- Featured film (homepage) ---------- */
+  #film .section-head {
+    justify-content: center;
+    text-align: center;
+  }
+  #film .section-head .measure,
+  #film .section-head .measure-h {
+    margin-inline: auto;
+  }
+  #film .eyebrow {
+    background-position: center bottom;
+  }
   .film {
     position: relative;
     max-width: 64rem;
+    margin-inline: auto;
     aspect-ratio: 16 / 9;
     overflow: hidden;
     background: #000;
