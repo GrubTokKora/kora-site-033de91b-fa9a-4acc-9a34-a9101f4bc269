@@ -50,7 +50,7 @@ composition:
   whitespace: balanced
   photography: supporting
   card_usage: none
-  mobile: The hero statement block stacks beneath the image, which crops to 4:5 rather than sitting behind text, and the display type drops to 2.75rem. The service groups collapse to a single column of eyebrow-plus-line entries. The process runs vertically with the sage connector on the left. The gallery sample becomes a free-scroll horizontal strip cropped at the right edge. A slim sticky bar appears on mobile only and stays clear of the accessibility widget's corner. It holds "Call or text 203-685-7355" as a tel: link, in white on red.
+  mobile: The hero statement block stacks beneath the image, which crops to 4:5 rather than sitting behind text, and the display type drops to 2.75rem. The service groups collapse to a single column of eyebrow-plus-line entries. The process runs vertically with the sage connector on the left. The gallery sample becomes a free-scroll horizontal strip cropped at the right edge. A round, red floating call button (3.5rem, a white phone icon only) appears on mobile only, fixed at the bottom-left so it stays clear of the accessibility widget's corner. It is a tel: link to 203-685-7355, with aria-label "Call or text 203-685-7355".
 
 pages:
   - slug: services
