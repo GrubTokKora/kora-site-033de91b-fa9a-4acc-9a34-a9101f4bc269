@@ -211,7 +211,7 @@ sections:
       at the top edge. No other price is stated or implied.
   - id: gallery
     priority: supporting
-    show: "5 of 8, chosen for variety of subject, links to gallery.html"
+    show: "5 of the gallery photos on the homepage, chosen for variety of subject, links to gallery.html (which holds all 33 with filters)"
     intent: Let the work back up the terms. A visitor should see that the stone sits true and the beds look intentional.
     spec: >
       Five images from the SITE CONTENT gallery run as an uneven horizontal band at mixed widths, with
@@ -221,8 +221,39 @@ sections:
       Captions are written only from what each photo visibly shows, in small muted text. A "See our
       work →" link goes to gallery.html.
 
-      On gallery.html, all 8 SITE CONTENT images appear in a masonry arrangement. Beneath them sit
-      their four project write-ups as text entries with town eyebrows:
+      On gallery.html, 33 project photographs appear in a masonry arrangement (one column on mobile,
+      two on tablet, three on desktop), with a 2px gap and each photo at its natural aspect ratio.
+      The set is the 31 gallery photos from the old earthworksct.com/gallery (not its Before & After
+      section) plus two Kora gallery images that were not on the old site: the sunlit tree-ring lawn
+      (8mc96v) and the striped backyard lawn (qf2dh1). All are Kora-hosted WebP files. Ten reuse URLs
+      the site already had, and 21 were uploaded for the gallery. Local copies and a full manifest
+      are in the project's docs/gallery folder.
+
+      Four filter buttons sit above the grid: All (33), Masonry (8), Landscaping (20) and Outdoor
+      Living (5). They are square, uppercase, 700-weight buttons with a hairline border. The active
+      one is filled forest green with ground text; red is not used here, because red is reserved for
+      "Get a Free Estimate". Each figure carries data-cat="masonry|landscaping|outdoor-living". A
+      small inline script toggles [hidden] on the figures, sets aria-pressed on the buttons and
+      announces the count in a polite live region. Without JavaScript, all 33 photos show.
+
+      Each photo has a caption (category eyebrow plus a description of what the photo shows) on a
+      green-to-transparent gradient. It appears on hover or focus, and it always shows on touch
+      screens. The first six images load eagerly and the rest lazily. The CollectionPage JSON-LD
+      lists all 33 image URLs.
+
+      Every photo is wrapped in a button (aria-haspopup="dialog", zoom-in cursor) that opens a
+      lightbox. The lightbox is a native modal <dialog id="lightbox"> on near-opaque forest-green ink.
+      Its top bar holds a "3 / 8" counter and a square close button. The photo is centred with
+      object-fit: contain, with its category eyebrow and description underneath. Square prev/next
+      buttons sit at the sides on desktop and at the bottom corners on mobile.
+
+      Prev/next, the arrow keys and a swipe step through only the photos the current filter shows,
+      and wrap around at either end. Esc, the close button or a click outside the photo closes it,
+      and focus returns to the photo that opened it. Page scroll is locked while it is open, and the
+      neighbouring photos are preloaded. The viewer uses the same square, hairline-bordered button
+      language as the mobile nav. There is no red in it.
+
+      Beneath the grid sit the four project write-ups as text entries with town eyebrows:
       - Backyard Lawn Renovation, Norwalk
       - Front Entry Walkway, Rowayton
       - Failing Timber Wall Rebuild, Westport
