@@ -50,7 +50,7 @@ composition:
   whitespace: balanced
   photography: supporting
   card_usage: none
-  mobile: The hero statement block stacks beneath the image, which crops to 4:5 rather than sitting behind text, and the display type drops to 2.75rem. The service groups collapse to a single column of eyebrow-plus-line entries. The process runs vertically with the sage connector on the left. The gallery sample becomes a free-scroll horizontal strip cropped at the right edge. A round, red floating call button (3.5rem, a white phone icon only) appears on mobile only, fixed at the bottom-left so it stays clear of the accessibility widget's corner. It is a tel: link to 203-685-7355, with aria-label "Call or text 203-685-7355".
+  mobile: The hero statement block stacks beneath the image, which crops to 4:5 rather than sitting behind text, and the display type drops to 2.75rem. The service groups collapse to a single column of eyebrow-plus-line entries. The process runs vertically with the sage connector on the left. The gallery sample becomes a free-scroll horizontal strip cropped at the right edge. A round, red floating call button (3.5rem, a white phone icon only) appears on mobile only, fixed at the bottom-left so it stays clear of the accessibility widget's corner. It is a tel: link to 203-858-1773, with aria-label "Call or text 203-858-1773".
 
 pages:
   - slug: services
@@ -76,7 +76,7 @@ pages:
     sources: [https://earthworksct.com/gallery]
   - slug: contact
     title: "Contact Earthworks | Free Estimate in Norwalk, CT"
-    description: "Request a free estimate from Earthworks in Norwalk, CT. Call or text 203-685-7355, or tell us about your yard for a fixed written proposal in 3 business days."
+    description: "Request a free estimate from Earthworks in Norwalk, CT. Call or text 203-858-1773, or tell us about your yard for a fixed written proposal in 3 business days."
     h1: "Get Your Free Estimate"
     intent: how do I get them to come look at my yard
     takes: [contact, faq, hours_location]
@@ -164,7 +164,7 @@ sections:
       beneath it as a one-line standfirst, also in ground colour.
 
       Under that go one red "Get a Free Estimate" button linking to contact.html and the phone number
-      203-685-7355 as a ground-coloured tel: link. Do not overlay text on the image. Write the alt
+      203-858-1773 as a ground-coloured tel: link. Do not overlay text on the image. Write the alt
       text from what the photograph actually shows.
   - id: story
     priority: essential
@@ -231,8 +231,8 @@ sections:
       uploaded to Kora and served from stream.mux.com at 480p. A local copy is in docs/videos. The
       band carries VideoObject JSON-LD. The styles live in src/input.css under "Featured film".
 
-      Known issue: the film's opening title card (about the first 10 seconds) shows the old number
-      (203) 858-1773, which conflicts with the rule that only 203-685-7355 appears.
+      The film's opening title card (about the first 10 seconds) shows (203) 858-1773, which is the
+      correct business number. 203-858-1773 is retired and must never appear anywhere on the site.
   - id: gallery
     priority: supporting
     show: "5 of the gallery photos on the homepage, chosen for variety of subject, links to gallery.html (which holds all 33 with filters)"
@@ -359,7 +359,7 @@ sections:
       - "Spring Cleanup Special: 10% off all spring cleanups for new customers"
       - "Leaf Cleanup Season: new customers save up to $75 off their first leaf cleanup"
 
-      Each column lists its included work in one line and ends with "Call or text 203-685-7355" as a
+      Each column lists its included work in one line and ends with "Call or text 203-858-1773" as a
       red tel: link. No end dates are stated, because none exist.
   - id: service_area
     priority: supporting
@@ -397,7 +397,7 @@ sections:
     intent: Get the site walk booked, by form or by phone, whichever the visitor prefers.
     spec: >
       On the homepage, this is a closing band on forest green. It carries "Ready to Build Something
-      That Lasts?", the phone number 203-685-7355 at display size as a ground-coloured tel: link, a
+      That Lasts?", the phone number 203-858-1773 at display size as a ground-coloured tel: link, a
       red "Get a Free Estimate" button to contact.html, and the address in small ground-coloured
       type.
 
@@ -452,7 +452,7 @@ sections:
       (drainage, lighting, spring). The blog hero image is gallery image 7uqth5. Alt text describes
       what each photo shows.
 
-      The only phone number is 203-685-7355. Posts reuse the site's published facts
+      The only phone number is 203-858-1773. Posts reuse the site's published facts
       ($28–$55 per square foot, a proposal within 3 business days, permits and engineering handled
       for walls over four feet) and state no other prices.
 
@@ -463,7 +463,7 @@ sections:
 avoid:
   - The stat counters from their old site ("529+ Years", "36,504 Projects", "1,711,927 sq ft", "2,467%"). They are impossible and would destroy trust. Do not animate or count up any number.
   - Any years-in-business figure other than "more than 25 years of combined experience" from their own story. The old site's conflicting "21 Years" and "two decades" claims do not get a headline.
-  - The old phone number (203) 858-1773. Only 203-685-7355 appears anywhere.
+  - The old phone number (203) 858-1773. Only 203-858-1773 appears anywhere.
   - Any business email address, mailto link or "email us" line.
   - Links to pages on the old earthworksct.com site, including the old /contact and /gallery CTA URLs. Every link points at this site's own pages.
   - The word "Menu" anywhere. The section is "Services".
