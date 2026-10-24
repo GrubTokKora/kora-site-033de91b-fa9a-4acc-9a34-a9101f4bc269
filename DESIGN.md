@@ -62,7 +62,7 @@ pages:
     sources: [https://earthworksct.com/services]
   - slug: about
     title: "About Earthworks | Norwalk CT Landscapers & Masons"
-    description: "Family-owned by brothers Nicholas and Phoenix, Earthworks builds stone and gardens across Fairfield County with its own crew and fixed written pricing."
+    description: "Family-owned by brothers Nicholas and Phoenix Chetta, Earthworks builds stone and gardens across Fairfield County with its own crew and fixed written pricing."
     h1: "Built on Hard Work. Driven by Craftsmanship."
     intent: who are these people and can I trust them on my property
     takes: [story]
