@@ -3,6 +3,15 @@
 
 # DESIGN.md — Earthworks Landscaping and Masonry LLC
 
+positioning: >
+  The business serves Fairfield County, CT. Lead with Fairfield County and the focus towns, in this
+  order: Westport, Wilton, New Canaan, Darien, Weston (then Stamford, Fairfield, Greenwich). Do not
+  position the company as a Norwalk business: no "Norwalk" in titles, headings, eyebrows,
+  descriptions or body copy. Norwalk appears only in the street address (10 Platt St, Norwalk, CT
+  06855), which must stay exactly as is everywhere for NAP consistency with the Google Business
+  Profile. Phone is 203-858-1773. Owners: Nicholas Chetta and Phoenix Chetta. CT Home Improvement
+  Contractor HIC.0705687 appears in the footer on every page.
+
 archetype: modern-advisory
 rationale: A homeowner vetting a Norwalk contractor has a short list of blunt questions: what do you build, what does it cost, how does the job run, do you come to my town, and will you leave a mess. modern-advisory answers them one band at a time, in plain Barlow and on panels of their own forest green, with the real figures ($28–$55 per sq ft, a 2-year workmanship warranty, a proposal in 3 business days) set large. That matches the owners' friendly, modern, clean brand and their "Honest Numbers" voice far better than a portfolio-first or a heritage look would.
 interaction_level: L2
