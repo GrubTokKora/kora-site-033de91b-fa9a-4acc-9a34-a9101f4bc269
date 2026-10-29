@@ -6,7 +6,7 @@ address — and body copy are deliberately not recorded here; read the page itse
 title: Landscaping & Masonry in Fairfield County, CT | Earthworks
 purpose: Home page introducing Earthworks Landscaping and Masonry services, pricing, process, and customer reviews in Fairfield County, CT.
 sections:
-- `#hero` — Hero introduction and call to action: Norwalk, Fairfield County
+- `#hero` — Hero introduction and call to action; the h1 is the eyebrow line naming Wilton, New Canaan, Darien and Weston
 - `#pricing` — Pricing information for stone patios
 - `#offerings` "Services" — List of core landscaping and masonry services: Patios & Walkways, Retaining & Sitting Walls, Outdoor Living, Planting & Garden Design, Drainage & Grading, Lawn & Maintenance, Landscape Lighting, Snow & Ice Management
 - `#film` "Earthworks in Motion" — Featured Film: click-to-play project video with poster thumbnail, Norwalk, CT
